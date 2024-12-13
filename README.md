@@ -1,11 +1,16 @@
 # 在线教育平台
 
 ## 项目介绍
-在线教育平台是一个参考尚硅谷谷粒学苑开发的项目。  
-以 Spring Cloud 搭建整个微服务架构，后台采用Spring Boot+MySQL+MyBatis-Plus+Redis，并且结合 Vue 前端框架，采用 Nuxt 服务端渲染技术来优化前端页面，运用阿里云视频点播技术。  
-在管理系统的后台中，运用 Spring Security 进行用户认证和授权，以确保对不同用户权限的细致划分。  
+在线教育平台是一个参考尚硅谷谷粒学苑开发的项目。
+
+以 Spring Cloud 搭建整个微服务架构，后台采用Spring Boot+MySQL+MyBatis-Plus+Redis，并且结合 Vue 前端框架，采用 Nuxt 服务端渲染技术来优化前端页面，运用阿里云视频点播技术。
+
+在管理系统的后台中，运用 Spring Security 进行用户认证和授权，以确保对不同用户权限的细致划分。
+
 在用户的登录系统方面，则采纳了手机验证码注册和登录方式，并运用 JWT 生成 Token 以实现便捷的单点登录。此外，用户通过微信支付来进行课程购买。
-![](https://github.com/QiuHaimengjing/ImageStorage/blob/main/repositories/online-education-platform/online-education-platform01.png)  
+
+![](https://github.com/QiuHaimengjing/ImageStorage/blob/main/repositories/online-education-platform/online-education-platform01.png)
+
 关于项目更详细的介绍可以访问我的文章：[在线教育平台](https://blog.invictusqiu.top/2024/05/27/OnlineEducation)
 
 ## 项目技术
@@ -19,7 +24,7 @@
 ![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
 ![EasyExcel](https://img.shields.io/badge/EasyExcel-orange)
 
-## 前端
+### 前端
 ![Node.js](https://img.shields.io/badge/Node.js-14.21.3-339933?logo=nodedotjs&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-2.5.17-4FC08D?logo=vue.js&logoColor=white)
 ![Nuxt.js](https://img.shields.io/badge/Nuxt.js-2.0.0-00DC82?logo=nuxt.js&logoColor=white)
