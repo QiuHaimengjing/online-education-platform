@@ -1,0 +1,49 @@
+## 该原始配置文件已弃用，现转为nacos配置中心
+#
+## 服务端口
+#server:
+#  port: 8085
+#
+#spring:
+#  # 服务名
+#  application:
+#    name: service-order
+#  # 环境设置：dev、test、prod
+#  profiles:
+#    active: dev
+#  # mysql数据库连接
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/qiu_edu?serverTimezone=GMT%2B8
+#    username: root
+#    password: 数据库密码
+#  # 返回json的全局时间格式
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  # nacos服务地址
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#
+#mybatis-plus:
+#  # mybatis日志
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  # 配置mapper xml文件的路径
+#  mapper-locations: classpath:com/invictusqiu/eduorder/mapper/xml/*.xml
+#
+## 开启熔断机制
+#feign:
+#  hystrix:
+#    enabled: true
+#
+## 设置Hystrix超时时间，默认1000ms
+##hystrix:
+##  command:
+##    default:
+##      execution:
+##        isolation:
+##          thread:
+##            timeoutInMilliseconds: 6000

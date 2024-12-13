@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'font';
+  src: url('./font/优设标题黑_猫啃网.ttf');
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* margin-bottom: 18vh; */
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(13px);
+}
+
+.header .logo {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  left: 5%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.header .logo span {
+  font: 100 22px 'font';
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.header ul {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  right: 30%;
+}
+
+.header ul .nav-box {
+  position: absolute;
+  bottom: 1px;
+  width: 135px;
+  height: 5px;
+  border-radius: 2px;
+  z-index: -999;
+  transition: .5s;
+}
+
+/* 根据路由页面不同显示nav-box的位置 */
+.router-index {
+  background-color: #b444ff;
+  left: 0px;
+}
+
+.router-course {
+  background-color: #b444ff;
+  left: 140px;
+}
+
+.router-teacher {
+  background-color: #b444ff;
+  left: 280px;
+}
+
+.header ul li {
+  font-size: 18px;
+  width: 150px;
+  text-align: center;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+}
+
+.header ul li:nth-child(1):hover~.nav-box {
+  left: 0px;
+  background-color: rgb(25, 206, 164);
+}
+
+.header ul li:nth-child(2):hover~.nav-box {
+  left: 140px;
+  background-color: red;
+}
+
+.header ul li:nth-child(3):hover~.nav-box {
+  left: 280px;
+  background-color: #8da1f8;
+}
+
+.header ul li:nth-child(4):hover~.nav-box {
+  left: 420px;
+  background-color: #ffb1b1;
+}
+
+.header ul li:nth-child(5):hover~.nav-box {
+  left: 560px;
+  background-color: #7df88e;
+}
+
+.header .avatar {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 130%;
+  display: flex;
+  align-items: center;
+}
+
+.header .avatar img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.header .avatar span {
+  float: left;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

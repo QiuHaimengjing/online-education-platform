@@ -1,0 +1,42 @@
+## 该原始配置文件已弃用，现转为nacos配置中心
+#
+#server:
+#  port: 8087 # 服务端口
+#
+#spring:
+#  application:
+#    name: service-acl # 服务名
+#  # mysql数据库连接
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/qiu_edu?serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+#  # json的全局时间格式
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  # redis
+#  redis:
+#    host: 192.168.0.105
+#    port: 6379
+#    database: 0
+#    timeout: 1800000
+#    lettuce:
+#      pool:
+#        max-active: 20
+#        max-wait: -1 # 最大阻塞时间（附属标识没有限制）
+#        max-idle: 5
+#        min-idle: 0 # 最小空闲
+#  # nacos服务地址
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#
+#mybatis-plus:
+#  # mybatis日志
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  # 配置mapper xml文件的路径
+#  mapper-locations: classpath:com/invictusqiu/aclservice/mapper/xml/*.xml

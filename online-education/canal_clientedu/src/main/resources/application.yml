@@ -1,0 +1,17 @@
+# 服务端口
+server:
+  port: 8087
+
+spring:
+  # 服务名
+  application:
+    name: canal-client
+  # 环境设置：dev、test、prod
+  profiles:
+    active: dev
+  # mysql数据库连接
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qiu_edu?serverTimezone=GMT%2B8
+    username: root
+    password: 数据库密码

@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848 # 配置中心地址
+        file-extension: yml # 为配置内容的数据格式
+        namespace: f1e582a6-1a58-4403-b4ea-5b95ffa1f39c # 指定命名空间，默认public
+        ext-config:
+          - data-id: datasource.yml
+            refresh: true # 开启动态刷新配置，否则配置文件修改，工程无法感知
+          - data-id: jackson.yml
+            refresh: true
+          - data-id: nacos.yml
+            refresh: true
+          - data-id: redis.yml
+            refresh: true
+  profiles:
+    active: dev
+  application:
+    name: service-msm # 该配置影响统一配置中心中的dataId

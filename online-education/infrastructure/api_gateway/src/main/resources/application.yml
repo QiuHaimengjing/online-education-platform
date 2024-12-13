@@ -1,0 +1,64 @@
+## 该原始配置文件已弃用，现转为nacos配置中心
+#
+#server:
+#  port: 8222  # 服务端口
+#
+#spring:
+#  application:
+#    name: service-gateway   # 服务名
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848 # nacos服务地址
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true # 使用服务发现路由
+#          lower-case-service-id: true # 服务路由名小写
+#      # 设置路由id、路由的uri、设置路由断言,代理serviceId为auth-service的/auth/路径
+#      routes:
+#        # 配置service-acl服务
+#        - id: service-acl
+#          uri: lb://service-acl
+#          predicates:
+#            - Path=/*/acl/** # 路径匹配
+#        # 配置service-edu服务
+#        - id: service-edu
+#          uri: lb://service-edu
+#          predicates:
+#            - Path=/eduservice/** # 路径匹配
+#        # 配置service-cms服务
+#        - id: service-cms
+#          uri: lb://service-cms
+#          predicates:
+#            - Path=/educms/** # 路径匹配
+#        # 配置service-msm服务
+#        - id: service-msm
+#          uri: lb://service-msm
+#          predicates:
+#            - Path=/edumsm/** # 路径匹配
+#        # 配置service-order服务
+#        - id: service-order
+#          uri: lb://service-order
+#          predicates:
+#            - Path=/eduorder/** # 路径匹配
+#        # 配置service-oss服务
+#        - id: service-oss
+#          uri: lb://service-oss
+#          predicates:
+#            - Path=/eduoss/** # 路径匹配
+#        # 配置service-statistics服务
+#        - id: service-statistics
+#          uri: lb://service-statistics
+#          predicates:
+#            - Path=/staservice/** # 路径匹配
+#        # 配置service-ucenter服务
+#        - id: service-ucenter
+#          uri: lb://service-ucenter
+#          predicates:
+#            - Path=/educenter/** # 路径匹配
+#        # 配置service-vod服务
+#        - id: service-vod
+#          uri: lb://service-vod
+#          predicates:
+#            - Path=/eduvod/** # 路径匹配
